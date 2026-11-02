@@ -40,7 +40,7 @@
     "priceRange": "$$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "São Paulo",
+      "addressLocality": "Praia Grande",
       "addressRegion": "SP",
       "addressCountry": "BR"
     },
@@ -68,8 +68,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="256x256">
+
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -138,8 +139,16 @@
     /* Gold Gradient Text */
     .text-gold-gradient {
       background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA820A 100%);
+      
+      /* Webkit clip for text backgrounds */
       -webkit-background-clip: text;
+      background-clip: text;
+      
+      /* Webkit fallback for older engines */
       -webkit-text-fill-color: transparent;
+      
+      /* Standard CSS property to make text transparent */
+      color: transparent;
     }
 
     /* Luxury Button Gradient */
@@ -689,9 +698,11 @@
       
       <!-- Brand & Copyright -->
       <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full border border-goldChampagne/40 flex items-center justify-center bg-deepGraphite">
-          <span class="font-cinzel text-goldChampagne font-bold text-xs">P</span>
-        </div>
+          <svg class="w-9 h-9 text-goldChampagne" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+            <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="3" stroke-dasharray="6 4" />
+            <path d="M 20 50 L 35 50 L 42 32 L 50 68 L 58 38 L 65 50 L 80 50" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="50" cy="12" r="4" fill="currentColor"/>
+          </svg>
         <div>
           <p class="font-cinzel text-offWhite font-semibold tracking-wider">PULSE SOCIAL HUB</p>
           <p>© 2026 Pulse Social Hub. Transparência, Alinhamento de Marca & Posicionamento Autêntico.</p>

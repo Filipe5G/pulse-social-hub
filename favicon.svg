@@ -1,0 +1,5 @@
+<svg class="w-6 h-6 text-goldChampagne" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+  <circle cx="50" cy="50" r="38" stroke="currentColor" stroke-width="3" stroke-dasharray="6 4" />
+  <path d="M 20 50 L 35 50 L 42 32 L 50 68 L 58 38 L 65 50 L 80 50" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="50" cy="12" r="4" fill="currentColor"/>
+</svg>
